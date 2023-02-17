@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Web RTC</title>
+		<link rel="stylesheet" href="index.css" />
+	</head>
+	<body>
+		<div class="videos">
+			<video id="user-1" class="video-player" autoplay playsinline></video>
+			<video id="user-2" class="video-player" autoplay playsinline></video>
+		</div>
+
+		<div class="controls">
+			<button id="create-offer">Create Offer</button>
+			<label>SDP OFFER</label>
+			<textarea id="offer-sdp"></textarea>
+
+			<button id="create-answer">Create Answer</button>
+			<label>SDP ANSWER</label>
+			<textarea id="answer-sdp"></textarea>
+
+			<button id="add-answer">Add Answer</button>
+		</div>
+	</body>
+
+	<script src="index.js"></script>
+</html>

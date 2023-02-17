@@ -1,0 +1,31 @@
+body{
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.videos{
+  display: flex;
+  flex-direction: row;
+  width: 99%;
+  align-items: center;
+  justify-content:space-between;
+  /* padding: 30px; */
+}
+
+.video-player{
+  width: 700px;
+  height: 300px;
+  border: 2px solid black;
+  /* margin: 30px; */
+}
+
+.controls{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.controls > *{
+  height: 55px;
+}
