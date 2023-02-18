@@ -17,8 +17,8 @@ let init = async () => {
 
 	user1.srcObject = localStream;
 };
-//STUN servers
 
+//STUN servers
 let servers = {
 	iceServers: [
 		{
@@ -84,10 +84,10 @@ let createAnswer = async () => {
 		});
 	};
 
-	// //ice candidates
+	//ice candidates
 	peerConnection.onicecandidate = async (event) => {
 		if (event.candidate) {
-			document.getElementById("offer-sdp").value = JSON.stringify(
+			document.getElementById("answer-sdp").value = JSON.stringify(
 				peerConnection.localDescription,
 			);
 		}
